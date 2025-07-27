@@ -317,6 +317,49 @@
 }
   </code></pre>
         </section>
+        <section class="main-section" id="responsive_design">
+            <header>
+                <h1>Responsive Design</h1>
+            </header>
+            <p><span class="bold">Responsive web design (RWD)</span> is a web design approach to make web pages render
+                well on
+                all screen sizes and resolutions while ensuring good usability. It is the way to design for a
+                multi-device web.
+            </p>
+            <p>HTML is fundamentally responsive, or fluid. If you create a web page containing only HTML, with no CSS,
+                and
+                resize the window, the browser will automatically reflow the text to fit the viewport. While the default
+                responsive behavior may sound like no solution is needed, long lines of text displayed full screen on a
+                wide
+                monitor can be difficult to read. If wide screen line length is reduced with CSS, such as by creating
+                columns or
+                adding significant padding, the site may look squashed for the user who narrows their browser window or
+                opens
+                the site on a mobile device.</p>
+            <h3>Media Queries</h3>
+            <p>Media queries allow us to run a series of tests (for example, whether the user's screen is greater than a
+                certain width or resolution) and apply CSS selectively to style the page appropriately for the user's
+                needs.
+
+                For example, the following media query tests to see if the current web page is being displayed as screen
+                media
+                (therefore not a printed document) and the viewport is at least 80rem wide. The CSS for the
+                <span class="highlight">.container</span> selector will only be applied if these two things are true.
+            </p>
+            <pre><code><span class="element">@media screen and</span> (<span class="element">min-width:</span> <span class="property-value">80rem</span>) {
+  <span class="property">.container</span> {
+    <span class="property">margin:</span> <span class="property-value">1em 2em</span>;
+  }
+}</code></pre>
+        </section>
+        <section class="main-section" id="reference">
+            <header>
+                <h1>Reference</h1>
+            </header>
+            <p>You can find more information at <a href="https://deeplizard.com/article/css-a0-adlrzi">MDN</a> and <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS">Deeplizard</a>.
+            <p>
+        </section>
     </main>
 </body>
 
