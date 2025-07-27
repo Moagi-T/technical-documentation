@@ -1,141 +1,22 @@
-* {
-  box-sizing: border-box;
-}
+# CSS Technical Documentation Page
 
-html {
-  min-width: 500px;
-}
+This project is a **Technical Documentation Page** created as part of the [freeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/).
 
-body {
-  background-color:#F3F0EF;
-  margin: 0;
-  padding-left: 320px;
-  font-family: Raleway, sans-serif;
-}
+## 📋 Project Description
 
-nav header {
-  margin: auto;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  font-size: 26px;
-  font-weight: bold;
-} 
+The CSS Technical Documentation Page provides a simple, responsive layout for presenting structured technical content — in this case, information about Cascading Style Sheets (CSS). It simulates the look and function of real developer documentation.
 
-nav {
-  width: 320px;
-  height: 100vh;
-  border-right: 1px solid #968982;
-  background: #E7E3E1;
-  position: fixed;
-  left: 0;
-  margin: 0 auto;
-  text-align: left;
-  padding-left: 16px;
-}
+The project demonstrates:
+- Responsive layout with a fixed sidebar navigation
+- Use of semantic HTML elements
+- Clean, readable typography
+- Scrollable main content sections with anchor linking
 
-nav ul {
-  list-style-type: none;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  
-}
+## 🚀 Live Demo
 
-nav ul li {
-  font-size: 20px;
-}
+[Click here to view the live project](https://moagi-t.github.io/technical-documentation/)  
 
-nav a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  padding: 12px;
-}
+## 📸 Screenshots
 
-nav ul li:last-of-type {
-  border-bottom: none;
-}
-
-nav a:hover {
-  border-left: 4px solid	black;
-  background: #96898244;
-}
-
-main ul {
-  line-height: 1.3em;
-  text-align: justify;
-}
-
-#main-doc {
-  padding: 30px;
-  margin: 0 auto;
-  font-size: 18px;
-}
-
-h1 {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-p {
-  text-align: justify;
-  letter-spacing: 0.3px;
-}
-
-.section-indent {
-  margin-left: 20px;
-}
-
-pre {
-  font-size: 14px;
-  background: #484848;
-  margin-left: 20px;
-  padding: 10px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-code {
-  color: white;
-}
-
-#css_selectors pre:first-of-type {
-  height: 80px;
-}
-
-.element {
-  color: #50C878;
-}
-
-.property {
-  color: #B6D0E2;
-}
-
-.property-value {
-  color: #FA8072;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.highlight {
-  background-color: #D3D3D3;
-  font-size: 16px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-#reference a {
-  text-decoration: none;
-  color: #6495ED;
-}
-
-#reference a:hover {
-  color: #0047AB;
-}
+![Screenshot-1](css-doc-1.png)
+![Screenshot-2](css-doc-2.png)
