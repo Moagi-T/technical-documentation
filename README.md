@@ -18,5 +18,5 @@ The project demonstrates:
 
 ## 📸 Screenshots
 
-![Screenshot-1](css-doc-1.png)
-![Screenshot-2](css-doc-2.png)
+![Screenshot-1](Screenshots\css-doc-1.png)
+![Screenshot-2](Screenshots\css-doc-2.png)
