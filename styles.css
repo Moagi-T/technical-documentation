@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  min-width: 500px;
-}
-
 body {
   background-color:#F3F0EF;
   margin: 0;
@@ -144,7 +140,7 @@ img {
   #navbar {
     width: 100%;
     height: 250px;
-    position: absolute;
+    position: fixed;
     overflow: auto;
     border-bottom: 1px solid gray;
     transition: all 0.1s ease;
