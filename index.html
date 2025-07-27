@@ -24,6 +24,126 @@
             <li><a href="#reference" class="nav-link">Reference</a></li>
         </ul>
     </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction_to_css">
+            <header class="heading">
+                <h1>Introduction to CSS</h1>
+            </header>
+            <div class="section-indent">
+                <p><span class="bold">CSS (Cascading Style Sheets)</span> is a styling language used to define the
+                    visual
+                    appearance of documents written in HTML or XML (including variations like SVG, MathML, or XHTML). It
+                    controls
+                    how elements are displayed across different media, such as screens, print, or even speech.
+                </p>
+                <p>CSS is one of the fundamental languages of the open web and is standardized across all major web
+                    browsers
+                    based on W3C guidelines. In the past, different parts of the CSS specification were developed
+                    together, which
+                    made it possible to label them as versions—like CSS1, CSS2.1, or CSS3. However, there won’t be a
+                    CSS4. Today,
+                    everything is simply referred to as "CSS," with individual modules updated and versioned separately.
+                </p>
+            </div>
+        </section>
+        <section class="main-section" id="css_selectors">
+            <header>
+                <h1>CSS Selectors</h1>
+            </header>
+            <div class="section-indent">
+                <p>A <span class="bold">CSS selector</span> is the starting part of a CSS rule. It defines a pattern
+                    that tells
+                    the browser which HTML elements to target so the styles specified in the rule can be applied to
+                    them.</p>
+                <p>Selectors, whether used in CSS or JavaScript, enable targeting HTML elements based on their type,
+                    attributes,
+                    current states, and even position in the DOM. Combinators allow you to be more precise when
+                    selecting elements
+                    by enabling selecting elements based on their relationship to other elements.</p>
+                <pre><code><span class="element">.elementID</span> {
+  <span class="property">color:</span> <span class="property-value">black</span>;
+} 
+          </code></pre>
+                <h3>Selector Types</h3>
+                <p>A <span class="bold">type selector</span> targets all elements with a specific tag name.</p>
+                <ul>
+                    <li>For example, <span class="bold">div</span> selects every element, while <span
+                            class="bold">input</span>
+                        targets all input elements.</li>
+                    <li>The <span class="bold">universal selector</span>, written as an asterisk (*), is a special type
+                        of
+                        selector that matches all elements.</li>
+                    <li>The <span class="bold">class selector</span> targets elements with a specific class attribute,
+                        using a
+                        period (.) before the class name—for example, .index will select any element with class="index".
+                    </li>
+                    <li>The <span class="bold">ID selector</span> targets elements by their id attribute, using a hash
+                        symbol (#)
+                        before the ID—like #toc, which selects the element with id="toc".</li>
+                </ul>
+                <p>While class and id are both global attributes, only one element in a document should have a specific
+                    ID.
+                    However, if multiple elements share the same ID, the ID selector will still match all of them.</p>
+                <p>When creating compound selectors, the type or universal selector should come before the class or ID
+                    selector.
+                    For instance, div.index targets elements with the class index.</p>
+                <pre><code><span class="element">*</span> {
+  <span class="property">font-style:</span> <span class="property-value">italic</span>;
+}
+
+<span class="element">p</span> {
+  <span class="property">color:</span><span class="property-value"> black</span>;
+}
+
+<span class="element">.class</span> {
+  <span class="property">text-decoration:</span> <span class="property-value">none</span>;
+}
+
+<span class="element">#id</span> {
+  <span class="property">font-family:</span> <span class="property-value">helvetica</span>;
+}</code></pre>
+            </div>
+        </section>
+        <section class="main-section" id="css_box_model">
+            <header>
+                <h1>CSS Box Model</h1>
+            </header>
+            <div class="section-indent">
+                <p>In CSS, every element is surrounded by a box, and understanding how these boxes work is essential for
+                    building more complex layouts or aligning elements effectively.</p>
+                <p>The <span class="bold">CSS box model</span>, which primarily applies to block-level elements, defines
+                    how the
+                    content, padding, border, and margin combine to form the visible box on a webpage. Inline elements
+                    follow only
+                    parts of this model. To make things a bit more intricate, CSS also offers two different box models:
+                    the
+                    standard model and an alternate one.</p>
+                <h3>Box composition</h3>
+                <p>These components make up a box:</p>
+                <ul>
+                    <li><span class="bold">Content box:</span> This is where your actual content appears. You control
+                        its size
+                        using properties like <span class="highlight">width</span> and <span>height</span>.</li>
+                    <li><span class="bold">Padding box:</span> The padding sits around the content as white space; size
+                        it using
+                        <span class="highlight">padding</span> and related properties.
+                    </li>
+                    <li><span class="bold">Border box:</span> The border box wraps the content and any padding; size it
+                        using
+                        <span class="highlight">border</span> and related properties.
+                    </li>
+                    <li><span class="bold">Margin box:</span> The margin is the outermost layer, wrapping the content,
+                        padding,
+                        and border as whitespace between this box and other elements; size it using
+                        <span class="highlight">margin</span> and related properties.
+                    </li>
+                </ul>
+                <p>Below is an illustration of the layers forming a box:</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model/box-model.png"
+                    loading="lazy">
+                <div>
+        </section>
+    </main>
 </body>
 
 </html>
