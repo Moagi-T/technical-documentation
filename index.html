@@ -143,6 +143,180 @@
                     loading="lazy">
                 <div>
         </section>
+        <section class="main-section" id="layout">
+            <header>
+                <h1>Layout</h1>
+            </header>
+            <div class="section-indent">
+                <p><span class="bold">CSS layout</span> techniques give us the ability to position elements on a web
+                    page based
+                    on several factors: their default placement in the normal document flow, their relationship to
+                    surrounding
+                    elements, their parent container, and the overall browser window or viewport.</p>
+                <p>The <span class="bold">three types</span> of layouts in CSS are:</p>
+                <ul>
+                    <li><span class="bold">Flow</span> - Flow layout or normal flow</li>
+                    <li><span class="bold">Flex</span> - Flexible box layout or flexbox</li>
+                    <li><span class="bold">Grid</span> - Grid layout</li>
+                </ul>
+                <h3>CSS Flow Layout</h3>
+                <p><span class="bold">Normal Flow</span> or <span class="bold">Flow Layout</span>, is the way that block
+                    and
+                    inline elements are displayed on a page before any changes are made to their layout. The flow is
+                    essentially a
+                    set of things that are all working together and know about each other in your layout. Once something
+                    is taken
+                    out of flow it works independently.</p>
+                <p><span class="bold">Inline elements</span> will display themselves in the inline direction. This
+                    means, in the
+                    direction words are displayed in a sentence according to the Writing Mode of the document.
+                    <span class="bold">Block elements</span> display one after the other, as paragraphs do in the
+                    Writing Mode of
+                    that document. To put it in more simpler terms, inline elements display one after the other,
+                    starting on the
+                    left, and block elements start at the top and move down the page.
+                </p>
+                <pre><code><span class="element">.inline-element</span> {
+  <span class="property">display:</span> <span class="property-value">inline</span>;
+}
+
+<span class="element">.block-element</span> {
+  <span class="property">display:</span> <span class="property-value">block</span>;
+}</code></pre>
+                <p>Once an element is displayed on a page inside the normal flow, it can be further adjusted with the
+                    <span class="highlight">position</span> property. The <span class="bold">position property</span>
+                    allows you
+                    to precisely control the placement of boxes inside other boxes. static positioning is the default in
+                    normal
+                    flow, but you can cause elements to be laid out differently using other values, for example, fixing
+                    them to
+                    the top of the browser viewport using <span class="highlight">position: fixed.</span>
+                </p>
+                <p>The possible values for the position property include:</p>
+                <pre><code><span class="element">.element</span> {
+  <span class="property">position:</span> <span class="property-value">static</span>;
+  <span class="property">position:</span> <span class="property-value">relative</span>;
+  <span class="property">position:</span> <span class="property-value">absolute</span>;
+  <span class="property">position:</span> <span class="property-value">fixed</span>;
+  <span class="property">position:</span> <span class="property-value">sticky</span>;
+}</code></pre>
+                <p>Another CSS property that allows us to further position an element in the normal flow is the
+                    <span class="bold">float property</span>. Before CSS Flexbox and Grid, the float property was used
+                    to allow
+                    block elements to be positioned next to each other on the same line. Now, Flexbox and Grid are used
+                    for this
+                    and the use cases for the float property are now more limited.
+                </p>
+                <h3>CSS Flexbox Layout</h3>
+                <p>The <span class="bold">CSS flexible box layout</span> allows us to specify an element as a container
+                    element.
+                    This container element is known as a <span class="highlight">flex container</span>. When a flex
+                    container is
+                    created, the direct children of the container are then represented using boxes that have flexible
+                    sizes. By
+                    saying flexible sizes, we mean that the boxes can either grow or shrink in size to fit inside their
+                    parent
+                    element, the flex container.</p>
+                <p>To configure a flexbox layout, we apply CSS flex and alignment properties to the container and the
+                    direct
+                    children of the container.</p>
+                <p>An example of some CSS Flexbox properties:</p>
+                <pre><code><span class="element">.container</span> {
+  <span class="property">display</span>: <span class="property-value">flex</span>;
+  <span class="property">flex-direction</span>: <span class="property-value">row</span>;
+  <span class="property">flex-wrap</span>: <span class="property-value">wrap</span>;
+}</code></pre>
+                <h3>CSS Grid Layout</h3>
+                <p><span class="bold">CSS grid layout</span> introduces a two-dimensional grid system to CSS. Grids can
+                    be used
+                    to lay out major page areas or small user interface elements. A <span class="highlight">grid</span>
+                    is a set
+                    of intersecting horizontal and vertical lines defining rows and columns. Elements can be placed onto
+                    the grid
+                    within these column and row lines. </p>
+                <p>These are the general steps taken to define a grid layout:</p>
+                <ol>
+                    <li>Define a container element.</li>
+                    <li>Apply display: grid to the container.</li>
+                    <li>Define grid columns and rows.</li>
+                    <li>Place grid items.</li>
+                    <li>Customize grid items (optional).</li>
+                    <li>Add gaps between grid items (optional).</li>
+                </ol>
+            </div>
+        </section>
+        <section class="main-section" id="styling_text">
+            <header>
+                <h1>Styling Text</h1>
+            </header>
+            <p>Text inside an element starts at the top left of the content area (or top right for right-to-left
+                languages)
+                and flows across the line until it reaches the end. Then it moves down to the next line and continues.
+                This
+                keeps repeating until all the text fits. It behaves like a row of inline elements—only breaking onto a
+                new line
+                when it runs out of space or when you add a line break with something like <br>.</p>
+            <p>The CSS properties used to <span class="bold">style text</span> generally fall into two categories:</p>
+            <ul>
+                <li><span class="bold">Font styles:</span> These control how the text looks—like which font is used, how
+                    big it
+                    is, and whether it’s <span class="highlight">bold</span> or <span class="highlight">italic</span>.
+                </li>
+                <li><span class="bold">Text layout styles:</span> These adjust how the text is spaced and
+                    positioned—like
+                    <span class="highlight">line spacing</span>, <span class="highlight">letter spacing</span>, and
+                    <span class="highlight">text alignment</span> inside its box.
+
+                </li>
+            </ul>
+            <p>Here are some examples of style based properties:</p>
+            <pre><code><span class="element">p</span> {
+  <span class="property">color:</span> <span class="property-value">red</span>;
+  <span class="property">font-family:</span> <span class="property-value">Helvetica, Arial, sans-serif</span>;
+  <span class="property">font-size:</span> <span class="property-value">10px</span>;
+  <span class="property">text-transform:</span> <span class="property-value">capitalize</span>;
+  <span class="property">font-weight:</span> <span class="property-value">bold</span>;
+  <span class="property">text-shadow:</span> <span class="property-value">4px 4px 5px red</span>;
+  <span class="property">text-align:</span> <span class="property-value">center</span>;
+  <span class="property">line-height:</span> <span class="property-value">1.6</span>;
+}</code></pre>
+            <p>These are just a few examples, there are many more properties that can be used to style text.</p>
+        </section>
+        <section class="main-section" id="transitions_and_effects">
+            <header>
+                <h1>Transitions and Effects</h1>
+            </header>
+            <p>You can regulate how quickly style changes occur with <span class="bold">CSS transitions</span>. You can
+                make
+                those changes gradually over time rather than all at once. For instance, when you change the color of an
+                element
+                from white to black, it typically changes immediately. However, CSS transitions allow the color to fade
+                smoothly
+                and according to a customizable speed pattern. An implicit transition occurs when an animation simply
+                moves from
+                one state to another, such as from beginning to end, with the browser automatically filling in the gaps.
+            </p>
+            <p>CSS transitions let you decide which properties to <span class="bold">animate</span> (by listing them
+                explicitly), when the animation will start (by setting a <span class="highlight">delay</span>), how long
+                the
+                transition will last (by setting a <span class="highlight">duration</span>), and how the transition will
+                run (by
+                defining an <span class="highlight">easing function</span>, e.g., linearly or quick at the beginning,
+                slow at
+                the end).</p>
+            <p>CSS Transitions are accessed using the <span class="highlight">transitions property</span>. This is the
+                best
+                way to configure transitions, as it makes it easier to avoid out of sync parameters, which can be very
+                frustrating to have to spend lots of time debugging in CSS.</p>
+            <p>Some examples of the usage of the transitions property:</p>
+            <pre><code><span class="element">div</span> {
+  <span class="property">transition:</span> <span class="property-value">'property' 'duration' 'timing-function' 'delay'</span>;
+  <span class="property">transition-property:</span> <span class="property-value">width</span>;
+  <span class="property">transition-duration:</span> <span class="property-value">6s</span>;
+  <span class="property">transition-delay:</span> <span class="property-value">1s</span>;
+}
+  </code></pre>
+        </section>
     </main>
 </body>
 
